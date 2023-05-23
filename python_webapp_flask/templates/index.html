@@ -8,7 +8,8 @@
     </div>
     <div class="content">
         <div class="tweet-container">
-            <a href="http://twitter.com/intent/tweet/?text=I%20just%20created%20a%20new%20Python%20Flask%20website%20on%20Azure%20using%20Azure%20DevOps%20Project&hashtags=AzureDevOpsProject%2CVSTS%20%40Azure%20%40VSTS">
+            <a
+                href="http://twitter.com/intent/tweet/?text=I%20just%20created%20a%20new%20Python%20Flask%20website%20on%20Azure%20using%20Azure%20DevOps%20Project&hashtags=AzureDevOpsProject%2CVSTS%20%40Azure%20%40VSTS">
                 <img src="../static/img/tweetThis.svg" />
             </a>
         </div>
@@ -21,6 +22,30 @@
 </div>
 
 <div class="row">
+    <!-- # Code Added for Azure AppInsight-->
+    <div class="col-md-4">
+        <h2>PAE Send Custom Event</h2>
+        <p>Press button to send custom event called <b>ShoppingCartCheckout</b></p>
+        <p><a class="btn btn-default" href="{{ url_for('track_custom_event') }}">Custom Event &raquo;</a></p>
+    </div>
+    <!-- # End of code Azure AppInsight-->
+
+    <!-- # Code Added for Azure AppInsight-->
+    <div class="col-md-4">
+        <h2>PAE Send Custom Metric</h2>
+        <p>Press button to send custom metric for <b>queueSize</b></p>
+        <p><a class="btn btn-default" href="{{ url_for('send_metric') }}">Custom Metric &raquo;</a></p>
+    </div>
+    <!-- # End of code Azure AppInsight-->
+
+    <!-- # Code Added for Azure AppInsight-->
+    <div class="col-md-4">
+        <h2>PAE Trigger handled Exception</h2>
+        <p>Press button to trigger a random handled exception</p>
+        <p><a class="btn btn-default" href="{{ url_for('handledException') }}">Handled Exception &raquo;</a></p>
+    </div>
+    <!-- # End of code Azure AppInsight-->
+
     <div class="col-md-4">
         <h2>Get started right away </h2>
         <p>
